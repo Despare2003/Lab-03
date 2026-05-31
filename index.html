@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сучасний Flexbox Макет</title>
+    <!-- Підключення зовнішнього файлу стилів CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка з якорними посиланнями -->
+    <header class="header">
+        <div class="logo">Web<span>Studio</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Головна</a></li>
+                <li><a href="#services">Послуги</a></li>
+                <li><a href="#about">Чому ми</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+            </ul>
+        </nav>
+        <a href="#contacts" class="cta-button">Зв'язатися</a>
+    </header>
+
+    <!-- Головний блок -->
+    <div class="main-container" id="home">
+        <main class="content">
+            <img src="https://s.dou.ua/storage-files/image-2_4JKHUmu.jpg" alt="Робоче місце розробника">
+            <h1>Ми створюємо цифрові шедеври</h1>
+            <p>Наша команда допомагає бізнесу зростати за допомогою сучасного веб-дизайну, надійної Front-end розробки та ефективного просування. Ми використовуємо Flexbox та CSS Grid для побудови інтерфейсів, які однаково бездоганно виглядають як на смартфонах, так і на великих моніторах.</p>
+        </main>
+
+        <!-- Блок "Чому ми" -->
+        <aside class="sidebar" id="about">
+            <div class="sidebar-widget">
+                <h3>Останні новини</h3>
+                <p>Як Flexbox змінив підхід до адаптивної верстки за останні роки.</p>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Чому ми?</h3>
+                <p>100% адаптивність, швидке завантаження сайту та чистий сучасний код.</p>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Картки послуг -->
+    <section class="cards-section" id="services">
+        <h2>Наші напрямки роботи</h2>
+        <div class="cards-container">
+            <!-- Картка 1 (дизайн) -->
+            <div class="card">
+                <img class="card-img" src="https://welovebrands.com.ua/wp-content/webp-express/webp-images/uploads/2023/06/foto_1-3.jpg.webp" alt="UI/UX Дизайн">
+                <div class="card-body">
+                    <h3>UI/UX Дизайн</h3>
+                    <p>Проектування зручних інтерфейсів користувача та створення унікального стилю вашого бренду.</p>
+                    <a href="#contacts" class="card-btn">Замовити →</a>
+                </div>
+            </div>
+            <!-- Картка 2 (код) -->
+            <div class="card">
+                <img class="card-img" src="https://wezom.com.ua/storage/blog/inner_x2/egi2Eyu1ufHvlPg9eyPCJFZuRwaNP26Dv3zCzEd0.jpg.webp?v=1735648058" alt="Веб-розробка">
+                <div class="card-body">
+                    <h3>Веб-розробка</h3>
+                    <p>Якісна верстка та інтеграція з сучасними системами керування контентом.</p>
+                    <a href="#contacts" class="card-btn">Замовити →</a>
+                </div>
+            </div>
+            <!-- Картка 3 (seo) -->
+            <div class="card">
+                <img class="card-img" src="https://clyberon.com/wp-content/uploads/2024/12/20324-1536x916.png" alt="SEO Оптимізація">
+                <div class="card-body">
+                    <h3>SEO та Маркетинг</h3>
+                    <p>Просування вашого продукту в пошукових системах та залучення нових клієнтів.</p>
+                    <a href="#contacts" class="card-btn">Замовити →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СЕКЦІЯ: КОНТАКТИ -->
+    <section class="contacts-section" id="contacts">
+        <h2>Зв'яжіться з нами</h2>
+        <div class="contacts-container">
+            
+            <!-- Ліва частина: Інформація -->
+            <div class="contacts-info">
+                <div>
+                    <h3>Контактна інформація</h3>
+                    <p>Заповніть форму або зв'яжіться з нами напряму. Ми відповімо протягом 1 години.</p>
+                </div>
+                
+                <div class="info-details">
+                    <div class="info-item">
+                        <h5>Телефон</h5>
+                        <p>+380 (44) 123-45-67</p>
+                    </div>
+                    <div class="info-item">
+                        <h5>Email</h5>
+                        <p>hello@webstudio.com</p>
+                    </div>
+                    <div class="info-item">
+                        <h5>Адреса офісу</h5>
+                        <p>м. Київ, вул. Хрещатик, 12</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <h5>Графік роботи</h5>
+                    <p>Пн - Пт: 9:00 - 18:00</p>
+                </div>
+            </div>
+
+            <!-- Права частина: Форма -->
+            <div class="contacts-form-container">
+                <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Форма успішно відправлена! (Демо)');">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" placeholder="Іван Іванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email адреса</label>
+                        <input type="email" id="email" placeholder="ivan@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" rows="4" placeholder="Опишіть ваш проект..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Надіслати запит</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Підвал сайту -->
+    <footer class="footer">
+        <div class="footer-columns">
+            <div class="footer-col">
+                <h4>Про Студію</h4>
+                <p>Робимо інтернет красивішим та зручнішим для кожного користувача щодня.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Корисні посилання</h4>
+                <ul>
+                    <li><a href="#home">Наші роботи</a></li>
+                    <li><a href="#about">Вакансії</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Контакти</h4>
+                <p>Email: hello@webstudio.com</p>
+                <p>Телефон: +380 (44) 123-45-67</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 WebStudio. Всі права захищені. Побудовано суто на CSS Flexbox.
+        </div>
+    </footer>
+
+</body>
+</html>
